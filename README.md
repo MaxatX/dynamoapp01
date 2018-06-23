@@ -1,0 +1,2 @@
+# dynamoapp01
+dynamodbmx
