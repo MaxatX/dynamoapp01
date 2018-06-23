@@ -2,6 +2,9 @@ let AWS = require('aws-sdk');
 const ddb = new AWS.DynamoDB.DocumentClient();
 exports.handler = function (event, context, callback) {
 
+	console.log(event);
+	context.succeed('hello ' + event.name);
+
 	ddb.put({
 		TableName: 'usr',
 		Item: {
